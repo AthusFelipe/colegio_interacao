@@ -43,7 +43,7 @@
 
     }
 
-    $meuCadastro = new Cadastro($_GET["nome"], $_GET["nascimento"]) ;
+    $meuCadastro = new Cadastro($_GET["nome"], date("d/m/Y", strtotime($_GET["nascimento"]))) ;
     echo $meuCadastro ;
 
 
