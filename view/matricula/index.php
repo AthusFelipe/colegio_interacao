@@ -7,6 +7,7 @@ include_once '../../Controllers/matriculas.php' ; ?>
 
 <button type="button" class="btn btn-primary">Nova pré-matricula</button>
 </div>
+<br>
 
 <table class="table">
   <thead>

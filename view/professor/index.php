@@ -1,6 +1,9 @@
 <?php
 
-include_once '../../Controllers/professor.php';
+
+
+
+include_once $_SERVER['DOCUMENT_ROOT'].'/interacao/Controllers/professor.php';
 include_once   "../header.html";
 ?>
 

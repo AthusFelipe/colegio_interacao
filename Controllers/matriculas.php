@@ -2,16 +2,18 @@
 
 use Devbombeiro\DevAthus\Matriculas;
 
-include __DIR__ . "\..\config.php";
+require  __DIR__ . '/../Models/Matricula.php';
+ 
+require  __DIR__ . '/../config.php';
 
 
 
 
 
-function NovaMatricula($nr, $na, $se)
-{
+if(isset($_POST['nomealuno']))
+  {
   global $pdo;
-  $mat = new Matriculas($nr, $na, $se);
+  $mat = new Matriculas($_POST['nomeresp'], $_POST['nomealuno'], $_POST['serie']);
 
   $mat->consultar();
 
