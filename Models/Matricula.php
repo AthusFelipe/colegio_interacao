@@ -1,5 +1,7 @@
 <?php
 
+namespace Devbombeiro\DevAthus;
+
 
 
 class Matriculas
@@ -20,13 +22,14 @@ class Matriculas
         $this->datamatricula = date('Y-m-d');
     }
 
-    public function consultar(){
+    public function consultar()
+    {
         echo  '
-                        Responsável: '.$this->getNomeresp().' <br>
-                        Aluno: '.$this->getNomealuno().' <br>
-                        Serie: '.$this->getSerie().'<br>
-                        Status: '.$this->getStatus().'<br>
-                        Data: '.$this->getDatamatricula().'<hr>' ; 
+                        Responsável: ' . $this->getNomeresp() . ' <br>
+                        Aluno: ' . $this->getNomealuno() . ' <br>
+                        Serie: ' . $this->getSerie() . '<br>
+                        Status: ' . $this->getStatus() . '<br>
+                        Data: ' . $this->getDatamatricula() . '<hr>';
     }
 
     /**
@@ -114,17 +117,15 @@ class Matriculas
      */
     public function getStatus()
     {
-       return $this->status ;  
-       
+        return $this->status;
     }
 
     public function converteStatus()
     {
-        if($this->status == 1) $getStatus =  "Pré-matrícula" ; 
-        else $getStatus =  "Matriculado" ; 
+        if ($this->status == 1) $getStatus =  "Pré-matrícula";
+        else $getStatus =  "Matriculado";
 
-        return $getStatus ; 
-       
+        return $getStatus;
     }
     /**
      * Set the value of status

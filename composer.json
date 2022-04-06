@@ -1,0 +1,15 @@
+{
+    "name": "devbombeiro/dev_athus",
+    "autoload": {
+        "psr-4": {
+            "Devbombeiro\\DevAthus\\": "Models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Athus Felipe",
+            "email": "athusfelipe1995@gmail.com"
+        }
+    ],
+    "require": {}
+}
